@@ -12,5 +12,6 @@ namespace MVC_Completo.Models
 
     public DbSet<Usuario> Usuarios { get; set; }
     public DbSet<Produto> Produtos { get; set; }
+    public DbSet<Fornecedor> Fornecedores { get; set; }
   }
 }

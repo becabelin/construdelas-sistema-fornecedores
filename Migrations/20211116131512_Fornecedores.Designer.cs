@@ -2,15 +2,17 @@
 using MVC_Completo.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace MVC_Completo.Migrations
 {
     [DbContext(typeof(ContextoCms))]
-    partial class ContextoCmsModelSnapshot : ModelSnapshot
+    [Migration("20211116131512_Fornecedores")]
+    partial class Fornecedores
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
