@@ -1,36 +1,36 @@
 @model MVC_Completo.Models.Fornecedor
 
 @{
-    ViewData["Title"] = "Fornecedores";
+    ViewData["Title"] = "Excluir Fornecedor";
     Layout = "_Layout";
 }
 
-<h1>Excluir fornecedor</h1>
+<h1>Excluir Fornecedor</h1>
 
 <h3>Você tem certeza de que deseja excluir este fornecedor?</h3>
 <div>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
+            <label for="model.Nome">Nome</label>
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Nome)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Telefone_contato)
+            <label for="model.Telefone_contato">Telefone_contato</label>
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Telefone_contato)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cnpj)
+            <label for="model.CNPJ">CNPJ</label>
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Cnpj)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Endereco)
+            <label for="model.Endereco">Endereço</label>
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Endereco)
@@ -40,6 +40,6 @@
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Cancelar</a>
+        <a asp-action="Index">Voltar</a>
     </form>
 </div>
